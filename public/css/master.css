@@ -20,8 +20,6 @@ body{
   margin-right: 10%;
   position: absolute;
   z-index: 10;
-
-
 }
 
 .element-item-invisable{
@@ -253,18 +251,19 @@ article p{
   line-height: 50px;
 }
 .footer{
-  width: 102.5%;
+  width: 108%;
   background-color: black;
   color : white;
   text-align: center;
   height: 140px;
   padding-top: 30px;
   padding-bottom: 20px;
-
+  height: 250px;
   bottom: -100px;
 }
 .footer p {
   font-size: 30px;
+  color: white;
 }
 .footer2{
   width: 108%;
@@ -275,11 +274,12 @@ article p{
   padding-top: 30px;
   padding-bottom: 20px;
   position: absolute;
-
-  bottom: -390px;
+  bottom: -500px;
+  height: 250px;
 }
 .footer2 p {
   font-size: 30px;
+  color: white;
 }
 
 .quicksearch{
