@@ -1,0 +1,32 @@
+<%- include ("header"); -%>
+
+<!made for i phone x. Portfolio wanneer het er raar uit zijt ctrl shift r>
+
+
+<div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">Show all</button>
+  <button class="button" data-filter=".Kaws">Kaws</button>
+  <button class="button" data-filter=".StevenHarrington">Steven Harrington</button>
+  <button class="button" data-filter=".PietParra">Piet Parra</button>
+  <button class="button" data-filter=".RyanTravis">Ryan Travis</button>
+  <button class="button" data-filter=".KeithHaring">Keith Haring</button>
+</div>
+
+<p><input type="text" class="quicksearch" placeholder="Search for names.." size="5"></p>
+
+<div class="grid">
+
+  <% for (let i=0; i<posts.length; i++) { %>
+    <section id="bla" class ="element-item <%=posts[i].Artiest %>" >
+          <li id=#myTitle><a href="#"><%=posts[i].title %></a></li>
+          <img src="<%=posts[i].image %>" alt="">
+          <div class="meerLezen">
+              <a class ="link"href="/portfolio/<%=i %>">Meer lezen...</a>
+          </div>
+    </section>
+  <% } // close forloop %>
+</div>
+
+
+
+
+<%- include ("footer"); -%>
